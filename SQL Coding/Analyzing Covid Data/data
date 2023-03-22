@@ -1,0 +1,4 @@
+BULK INSERT dbo.data
+FROM 'C:\Users\Rommel\Desktop\SQL Analyst Portfolio Project\owi-covid-data.csv'
+
+WITH(FORMAT = 'CSV', FIRSTROW = 2)
