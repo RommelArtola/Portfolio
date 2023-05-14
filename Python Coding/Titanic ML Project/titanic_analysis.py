@@ -1,4 +1,4 @@
-'''
+"""
 This project was a guided project in Machine Learning to be used as a soft 
 introduction to ML for myself. 
 
@@ -13,8 +13,7 @@ hard-coded values were being passed/assigned, instead of choosing
 random values from np.random.choice(). 
 
 Thank you!
-
-'''
+"""
 
 # Load libraries for analysis and visualization
 import pandas as pd 
