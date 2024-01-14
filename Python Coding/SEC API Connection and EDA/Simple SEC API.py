@@ -173,7 +173,7 @@ part4_ts = part4_df[['filed', 'val']].sort_values(by='filed')
 # Little messy and the x-axis can be definitely cleaned up, but we're just exploring data and trend for now. 
 # Seems like Boeing has been on the negative (general) trend, as far as ComprehensiveIncomeNetOfTax is concerned.
 plt.plot(part4_ts['filed'], part4_ts['val'])
-
+plt.show()
 
 
 #Part 5/5:
@@ -182,6 +182,6 @@ plt.plot(part4_ts['filed'], part4_ts['val'])
 part5_df = SEC.gaap_info('BA', 'AccountsPayableCurrent')
 part5_ts = part5_df[['filed', 'val']].sort_values(by='filed')
 plt.plot(part5_ts['filed'], part5_ts['val'])
-
+plt.show()
 # Cool stuff! Based on the group, Boeing had a constantly-increasing amount of AccountsPayableCurrent and then had a drastic
 #   decrease in said amount at some point. It has began to start accruing up the current debts though!
