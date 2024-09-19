@@ -1,4 +1,3 @@
-#from Support.entity import PhysicsEntity
 import pygame
 import os
 import sys
@@ -53,7 +52,7 @@ class Game():
         self.flies_group = pygame.sprite.Group() 
         self.flies_group.add([Fly(surface=self.screen, 
                                   due_direction=random.choice(['left', 'right']), 
-                                  velocity=random.randint(2,10), 
+                                  velocity=random.randint(2,8), 
                                   position=None) for _ in range(self.num_flies)])
 
         self.bees_group = pygame.sprite.Group() 
